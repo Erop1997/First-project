@@ -1,0 +1,12 @@
+{% extends 'base_layout.html' %}
+{% load static %}
+
+{% block content %}
+<section class="section is-medium has-background-success-dark">
+<div class="container">
+    {% for lead in leads %}
+    <div class="box"> {{ lead }}</div>
+    {% endfor %}
+</div>
+</section>
+{% endblock %}
